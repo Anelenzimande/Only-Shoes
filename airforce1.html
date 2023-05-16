@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title> All Products-OnlyShoes</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+</head>
+<body>	
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html">
+				<h1>Onlyshoes</h1>
+			</a>
+	    </div>
+	    <nav>
+	    	<ul id="menuitems">
+	    		<li><a href="index.html"> <i class="fa fa-home"></i>Home </a></li>
+	    		<li><a href="products.html">Products</a></li>
+	    		<li><a href="exclusive.html">Exclusive</a></li>
+	    		<li><a href="contact.html"> Request a shoe</a></li>
+				<li><a href="account.html">Account</a></li>
+	    	</ul>
+		</nav>
+		<img src="images/basket.png" width="28px" height="28px">
+		<img src=images/menuicon.png class="menu-icon" onclick="menutoggle()">
+
+  </div>
+	</div>
+
+<!-- Nike Air Force 1 -->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/airforce1.png" width="100%" id="ProductImg">
+             
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/nikeairf1 (2).png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/nikeaf1.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/airforce1.png" width="100%" class="small-img">
+                </div>
+                
+
+            </div>
+
+        </div>
+        <div class="col-2">
+            <p>Product/Footwear</p>
+            <h1> Air Force 1<h4> By Nike &#174;</h4></h1>
+            <h3>R 1300</h3>
+            <br>
+            <select>
+                <option>Select Size</option>
+                <option> UK size 8</option>
+                <option> Uk size 9</option>
+				<option>Uk size 10</option>
+               
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3> Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <p> <font size="+1">
+				The radiance lives on in the Nike Air Force 1 '07, the b-ball OG that 
+				puts a fresh spin on the features you know best: crisp leather, stitched overlays 
+				in classic all white and the perfect amount of flash to make you shine.
+			</p>
+        </div>
+    </div>
+
+ </div>
+
+<!-- Footer Section -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+			<h4> <br>App Coming soon</h4>
+				
+				<div class="app-logo">
+					<img src="images/playstore.png">
+					<img src="images/appstore.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+			<a href="account.html"><h3> Sign Up</h3></a>
+			</div>
+			<h5>If you are unsatisfied with a Product or having an issue ,
+				feel free to contact us- </h5>  |
+          
+			<div class="footer-col-3">
+			<h5>Returns</h5>
+			</div> 
+			<div class="footer-col-4">
+				<img src="images/instagram.png" width="20px"> 
+				<Icon made by Pixel-perfect on www.flaticon.com >
+					<img src="images/twitter.png" width="20px">
+                <icon made by Freepik on www.flaticon.com>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h5><p class="copyright">@Copyright 2021- Onlyshoes | Privacy and Cookie Policy</p></h5>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+	var MenuItems = document.getElementById("menuitems");
+
+	menuitems.style.maxHeights = "0px";
+
+	function menutoggle(){
+		if(menuitems.style.maxHeight =="0px")
+		{
+			menuitems.style.maxHeight = "200px";
+		}
+		else
+	     {
+			 menuitems.style.maxHeight = "0px";
+		 }
+	}
+</script>
+
+<!-- js for product gallery -->
+
+<script>
+
+var ProductImg =document.getElementById("ProductImg");
+var SmallImg = document.getElementsByClassName("small-img");
+
+SmallImg[0].onclick= function()
+
+{
+	ProductImg.src = SmallImg[0].src;
+}
+SmallImg[1].onclick = function()
+
+{
+	ProductImg.src= SmallImg[1].src;
+}
+SmallImg[2].onclick = function()
+{
+	ProductImg.src= SmallImg[2].src;
+}
+</script>
+
+
+</body>
+</html>
